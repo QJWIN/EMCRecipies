@@ -84,8 +84,8 @@ public class EMCRecipies extends JavaPlugin
         endstone.setIngredient('S', Material.SAND);
         Bukkit.addRecipe(endstone);
 
-        this.getServer().addRecipe(new FurnaceRecipe(new NamespacedKey(this, "emc_smooth_sandstone"), new ItemStack(Material.SMOOTH_SANDSTONE, 1), Material.SANDSTONE, 10, 5));
-        this.getServer().addRecipe(new FurnaceRecipe(new NamespacedKey(this, "emc_smooth_red_sandstone"), new ItemStack(Material.SMOOTH_RED_SANDSTONE, 1), Material.RED_SANDSTONE, 10, 5));
+        this.getServer().addRecipe(new FurnaceRecipe(new NamespacedKey(this, "emc_smooth_sandstone"), new ItemStack(Material.SMOOTH_SANDSTONE, 1), Material.SANDSTONE, 10, 200));
+        this.getServer().addRecipe(new FurnaceRecipe(new NamespacedKey(this, "emc_smooth_red_sandstone"), new ItemStack(Material.SMOOTH_RED_SANDSTONE, 1), Material.RED_SANDSTONE, 10, 200));
 
 
     }
