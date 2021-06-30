@@ -166,7 +166,7 @@ public class EMCRecipies extends JavaPlugin
         this.getServer().addRecipe(new FurnaceRecipe(new ItemStack(Material.SMOOTH_RED_SANDSTONE, 1), Material.RED_SANDSTONE));
         
         // POPPED CHORUS FRUIT
-        final ShapelessRecipe poppedChorusFruit = new ShapelessRecipe(new NamespacedKey(this, "emc_poppedchorusfruit"), new ItemStack(Material.POPPED_CHORUS_FRUIT, 4));
+        final ShapelessRecipe poppedChorusFruit = new ShapelessRecipe(new NamespacedKey(this, "emc_poppedchorusfruit"), new ItemStack(Material.CHORUS_FLOWER, 4));
         poppedChorusFruit.addIngredient(Material.ENDER_EYE);
         poppedChorusFruit.addIngredient(Material.PHANTOM_MEMBRANE);
         Bukkit.addRecipe(poppedChorusFruit);
