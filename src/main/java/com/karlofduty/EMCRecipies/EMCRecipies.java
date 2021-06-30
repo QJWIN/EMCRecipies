@@ -162,8 +162,12 @@ public class EMCRecipies extends JavaPlugin
         Bukkit.addRecipe(endRod);
 
         // SAND STONE
-        this.getServer().addRecipe(new FurnaceRecipe(new ItemStack(Material.SMOOTH_SANDSTONE, 1), Material.SANDSTONE));
-        this.getServer().addRecipe(new FurnaceRecipe(new ItemStack(Material.SMOOTH_RED_SANDSTONE, 1), Material.RED_SANDSTONE));
+        // deprecated on spitgot 1.16 [add namespacekey + winned exp + coocked time] fix by QJWIN
+        // source : https://helpch.at/docs/1.16.5/org/bukkit/inventory/FurnaceRecipe.html
+        //this.getServer().addRecipe(new FurnaceRecipe(new ItemStack(Material.SMOOTH_SANDSTONE, 1), Material.SANDSTONE));
+        this.getServer().addRecipe(new FurnaceRecipe(new NamespacedKey(this, "emc_smooth_sandstone"), new ItemStack(Material.SMOOTH_SANDSTONE, 1), Material.SANDSTONE, 10, 5));
+        //this.getServer().addRecipe(new FurnaceRecipe(new ItemStack(Material.SMOOTH_RED_SANDSTONE, 1), Material.RED_SANDSTONE));
+        this.getServer().addRecipe(new FurnaceRecipe(new NamespacedKey(this, "emc_smooth_red_sandstone"), new ItemStack(Material.SMOOTH_RED_SANDSTONE, 1), Material.RED_SANDSTONE, 10, 5));
         
         // POPPED CHORUS FRUIT
         final ShapelessRecipe poppedChorusFruit = new ShapelessRecipe(new NamespacedKey(this, "emc_poppedchorusfruit"), new ItemStack(Material.POPPED_CHORUS_FRUIT, 4));
